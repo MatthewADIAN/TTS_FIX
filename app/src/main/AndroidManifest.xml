@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppKantinFti">
-        <activity android:name=".MinumanActivity"></activity>
         <activity android:name=".NasiActivity"></activity>
+        <activity android:name=".MinumanActivity"></activity>
         <activity android:name=".FastFoodActivity"></activity>
         <activity android:name=".MenuActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
