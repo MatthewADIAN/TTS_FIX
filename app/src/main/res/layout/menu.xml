@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="267dp"
+        android:layout_height="67dp"
+        android:text="Menu Cafe Biru FTI"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/snack" />
+
+                <TextView
+                    android:id="@+id/textSnack"
+                    android:layout_width="168dp"
+                    android:layout_height="102dp"
+                    android:layout_column="2"
+                    android:onClick="go2Snack"
+                    android:text="Snack \n\n\n Click Here to Order"
+                    android:layout_marginLeft="50dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/logo_nasi" />
+
+                <TextView
+                    android:id="@+id/textViewMakanan"
+                    android:layout_width="168dp"
+                    android:layout_height="102dp"
+                    android:layout_column="2"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="go2Nasi"
+                    android:text="Aneka macam nasi \n\n\n Click Here to Order"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/gambarMinuman"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_column="1"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/logo_minuman" />
+
+                <TextView
+                    android:id="@+id/keteranganMinuman"
+                    android:layout_width="168dp"
+                    android:layout_height="102dp"
+                    android:layout_column="2"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="go2Minuman"
+                    android:text="Minuman \n\n\n Click Here to Order" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
