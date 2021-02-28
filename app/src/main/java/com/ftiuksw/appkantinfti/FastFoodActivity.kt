@@ -3,6 +3,8 @@ package com.ftiuksw.appkantinfti
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
+import android.content.DialogInterface
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
@@ -74,10 +76,18 @@ class FastFoodActivity : AppCompatActivity() {
                             mNotificationManager.notify(1, mBuilder.build())
 
                         }
-                        .setNegativeButton("No") { dialog, id -> dialog.cancel() }
+                        .setNegativeButton("No") {
+                            dialogInterface: DialogInterface?, which: Int -> Toast.makeText(applicationContext,"Order cancelled",
+                                Toast.LENGTH_LONG).show()
+
+                        }
                 val alert = builder.create()
                 alert.show()
             }
         }
+    fun go2Menu(view: View?) {
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
+    }
     }
 
