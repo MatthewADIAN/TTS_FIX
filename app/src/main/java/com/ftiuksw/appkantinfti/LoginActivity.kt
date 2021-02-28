@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import java.io.IOException
+import java.util.*
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,4 +21,6 @@ class LoginActivity : AppCompatActivity() {
         intent.putExtra("Username", message)
         startActivity(intent)
     }
+
+
 }
