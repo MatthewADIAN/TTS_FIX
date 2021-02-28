@@ -25,4 +25,9 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this, MinumanActivity::class.java)
         startActivity(intent)
     }
+
+    fun go2Home(view: View?) {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+    }
 }

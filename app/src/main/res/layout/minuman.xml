@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <Spinner
         android:id="@+id/spinnerMinuman"
@@ -26,6 +27,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:text="Pilihan Pengambilan : "
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -51,6 +53,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:text="Jumlah"
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -60,7 +63,7 @@
         android:layout_height="67dp"
         android:gravity="center"
         android:text="Aneka Minuman"
-        android:textColor="@android:color/holo_orange_dark"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +89,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:text="Minuman : "
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -110,6 +114,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:text="Harga : "
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -133,6 +138,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="40dp"
         android:text="No. Hp : "
+        android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -155,6 +161,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"

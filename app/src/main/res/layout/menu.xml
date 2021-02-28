@@ -4,22 +4,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="267dp"
         android:layout_height="67dp"
-        android:text="Menu Cafe Biru FTI"
         android:gravity="center"
-        android:textColor="@android:color/holo_orange_dark"
+        android:text="Menu Cafe Biru FTI"
+        android:textColor="@android:color/holo_blue_light"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="go2Home"
+        app:srcCompat="@drawable/back" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,6 +63,7 @@
                     android:layout_column="2"
                     android:textSize="17sp"
                     android:onClick="go2Snack"
+                    android:textColor="@android:color/black"
                     android:text="Snack \n\n\n Click Here to Order"
                     android:layout_marginLeft="50dp" />
 
@@ -77,6 +88,7 @@
                     android:layout_height="102dp"
                     android:layout_column="2"
                     android:textSize="17sp"
+                    android:textColor="@android:color/black"
                     android:layout_marginLeft="50dp"
                     android:onClick="go2Nasi"
                     android:text="Aneka macam nasi \n\n\n Click Here to Order"
@@ -103,6 +115,7 @@
                     android:layout_height="102dp"
                     android:layout_column="2"
                     android:textSize="17sp"
+                    android:textColor="@android:color/black"
                     android:layout_marginLeft="50dp"
                     android:onClick="go2Minuman"
                     android:text="Minuman \n\n\n Click Here to Order" />

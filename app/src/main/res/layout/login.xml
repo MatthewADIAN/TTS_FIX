@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/main_activity_ID"
@@ -95,6 +96,7 @@
         android:layout_marginBottom="38dp"
         android:text="Created by : Matthew Adian Hartono (672018055)"
         android:textSize="17sp"
+        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.656"
